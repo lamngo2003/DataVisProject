@@ -1,0 +1,113 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+#container {
+  display: flex;
+  flex-direction: row;
+}
+
+#map-and-year-container {
+  width: 65%;
+}
+
+
+#map-container {
+  height: 90vh;
+}
+
+#charts-container {
+  width: 30%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+#toggle-charts {
+  text-align: center;
+  padding: 10px;
+}
+#toggle-charts button {
+  padding: 10px;
+  margin: 5px;
+  cursor: pointer;
+  border: none;
+  background-color: #f0f0f0;
+}
+
+#toggle-charts .active {
+  background-color: #d0d0d0;
+}
+
+#chart, #linechart {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tooltip {
+  position: absolute;
+  text-align: center;
+  background-color: #f9f9f9;
+  padding: 5px;
+  border: 1px solid #d4d4d4;
+  pointer-events: none;
+  opacity: 0;
+}
+
+/* Additional styles for the chart */
+.bar {
+  fill: steelblue;
+}
+
+.pie path {
+  stroke: #fff;
+}
+
+.pie text {
+  font-size: 12px;
+}
+
+
+input[type="range"] {
+  width: 60%;
+  margin-left: 20%;
+  margin-top: 10px;
+}
+
+#year-label {
+  text-align: center;
+  display: block;
+  margin-top: 5px;
+}
+
+#year-selector {
+  width: 65%; /* Match the width of the map-container */
+  padding: 20px;
+  text-align: center;
+  border-top: 1px solid #ddd; /* Optional, adds a separator line */
+}
+
+#year-input {
+  width: 80%; /* Adjust as needed */
+  margin: 0 auto;
+}
+
+#year-label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.bar {
+  fill: steelblue;
+}
+
+.pie path {
+  stroke: #fff;
+}
+
+.pie text {
+  font-size: 12px;
+}

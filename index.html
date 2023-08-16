@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Migration Visualization</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div id="container">
+        <div id="map-and-year-container">
+            <div id="map-container"></div>
+            
+            <div id="year-selector">
+                <input type="range" id="year-input" min="2000" max="2020" value="2018" step="1">
+                <label id="year-label">2018</label>
+            </div>
+        </div>
+        
+        <div id="charts-container">
+            <div id="toggle-charts">
+                <button id="bar-chart-btn" class="active">Bar Chart</button>
+                <button id="pie-chart-btn">Pie Chart</button>
+            </div>
+            <div id="chart"></div>
+            <div id="linechart"></div>
+        </div>
+
+    </div>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/map.js"></script>
+    <script src="js/bar.js"></script>
+    <script src="js/chart.js"></script>
+</body>
+</html>
